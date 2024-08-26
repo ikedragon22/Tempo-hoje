@@ -2,7 +2,8 @@ import requests
 from bs4 import BeautifulSoup
 
 url = "https://www.google.com/search?q=tempo&oq=tempo&"
-headers = {"user-agent": #Your user agent}
+#Coloque seu user agent
+headers = {"user-agent": '''Your user agent!''' }
 
 requisicao = requests.get(url, headers=headers)
 site = BeautifulSoup(requisicao.text, "html.parser")
